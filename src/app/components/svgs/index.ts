@@ -1,0 +1,1 @@
+export {default as Readmyai_logo} from '@/app/components/svgs/readmy.ai_color_lbackground_logo copy.svg'
