@@ -5,7 +5,7 @@ import HeroForm from "./hero-form";
 const HeroSection = () => {
   return (
     <section className="text-gray-600 body-font bg-gradient-light" id="signUp">
-      <div className="container mx-auto flex px-36 py-40 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font text-6xl mb-4 font-bold text-gray-900">
             ReadMy.AI
@@ -24,10 +24,8 @@ const HeroSection = () => {
           <HeroForm />
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <Image
+          <img
             className="object-cover object-center rounded"
-            height={600}
-            width={768}
             alt="hero"
             src="/hero_image1.png"
           />
