@@ -61,7 +61,7 @@ const HeroForm = () => {
         onSubmit={handleSubmit}
       >
         {({ errors, touched }) => (
-        <Form className="flex w-full md:justify-start justify-center items-end">
+        <Form data-netlify="true" className="flex w-full md:justify-start justify-center items-end">
           <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
             <Field
               type="email"
