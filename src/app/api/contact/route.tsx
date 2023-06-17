@@ -33,8 +33,17 @@ export async function POST(req: NextRequest, res: NextResponse) {
 
     try {
         //Send Email using transporter
-        transporter.sendMail(options);
-        transporter.sendMail(sendWaitListEmail);
+       await transporter.sendMail(options, (error, info) => {
+            if (error) {
+              console.log(error);
+            } else {
+              console.log('Email sent: ' + info.response);
+            }
+        });
+        setTimeout(async () => {
+            await transporter.sendMail(sendWaitListEmail);
+            console.log('Email sent to the user');
+        }, 1000);
     } catch (error){
         console.error("Failed to send email:", error);
     }
