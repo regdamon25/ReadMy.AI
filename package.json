@@ -6,15 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "netDev": "netlify dev"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.22.5",
+    "@netlify/functions": "^1.6.0",
     "@react-email/components": "0.0.6",
     "@sendgrid/mail": "^7.7.0",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
     "autoprefixer": "10.4.14",
+    "aws-lambda": "^1.0.7",
+    "axios": "^1.4.0",
     "dotenv": "^16.3.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
@@ -34,8 +39,12 @@
     "zod-formik-adapter": "^1.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
     "@svgr/webpack": "^8.0.1",
+    "@types/aws-lambda": "^8.10.119",
     "@types/nodemailer": "^6.4.8",
-    "@types/nodemailer-smtp-transport": "^2.7.5"
+    "@types/nodemailer-smtp-transport": "^2.7.5",
+    "babel-loader": "^9.1.2"
   }
 }
