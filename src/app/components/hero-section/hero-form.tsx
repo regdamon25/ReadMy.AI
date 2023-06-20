@@ -33,7 +33,7 @@ const HeroForm = () => {
     console.log(`Form submitted with values: ${JSON.stringify(values)}`);
 
       // Send email using Nodemailer
-      await fetch("https://readmyaiemailsender.azurewebsites.net", {
+      await fetch("https://readmyaiemailsender.azurewebsites.net/api/SendWelcomeEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

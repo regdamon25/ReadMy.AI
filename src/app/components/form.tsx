@@ -30,7 +30,7 @@ const ContactForm = () => {
     try {
       setIsLoading(true);
       // Send email using Nodemailer
-      await fetch("https://readmyaiemailsender.azurewebsites.net", {
+      await fetch("https://readmyaiemailsender.azurewebsites.net/api/SendWelcomeEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
