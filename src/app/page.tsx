@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import HeroSection from './components/hero-section/hero-section'
-import Content from "./components/content"
-import Feature from './components/feature'
-import Contact from './components/contact'
+import HeroSection from '../app/components/hero-section/hero-section'
+import Content from "../app/components/content"
+import Feature from '../app/components/feature'
+import Contact from '../app//components/contact'
+
 
 
 export default function Home() {

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { validationSchema } from "@/utils/validations";
+import { validationSchema } from "../../../utils/validations"
 import { Formik, Form, Field} from "formik";
 // import { toFormikValidationSchema } from "zod-formik-adapter";
 
@@ -29,8 +29,11 @@ const HeroForm = () => {
   ) => {
     try {
       setIsLoading(true);
+      // Log the submitted values
+    console.log(`Form submitted with values: ${JSON.stringify(values)}`);
+
       // Send email using Nodemailer
-      await fetch("https://readmyai.azurewebsites.net/api/SignupEmailNotification", {
+      await fetch("https://readmyaiemailsender.azurewebsites.net", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
