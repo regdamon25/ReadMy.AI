@@ -175,7 +175,7 @@ const Content = () => {
               </h2>
               <p className="leading-relaxed text-base">
                 Create your own library of books or documents that you can
-                access anytime. Textbooks will be available for 3-4 months and
+                access anytime. Textbooks will be available for 120 days and
                 will be automatically removed after the semester ends, so you
                 can save space and get ready for the next semester.
               </p>
